@@ -1,6 +1,4 @@
 // jshint esvesion:6
-
-
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -27,10 +25,8 @@ app.get("/", function(req, res){
 
 app.post("/", function(req, res){
   var item = req.body.newItem;
-  console.log(item);
-
+  //console.log(item);
   items.push(item);
-
   res.redirect("/");
 });
 
